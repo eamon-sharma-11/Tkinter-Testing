@@ -1,13 +1,12 @@
 from tkinter import *
 
 root = Tk()
+def click():
+    myLabel = Label(root, text="Clicked")
+    myLabel.pack()
 
-#Creating a label widget
-myLabel = Label(root, text="Hello World")
-myLabel1 = Label(root, text="Hello World, the sequal")
-#shoving it onto the screen
-myLabel.grid(row = 0, column = 0)
-myLabel1.grid(row = 1, column = 0)
+button = Button(root, text="Click", command = click)
 
 
+button.pack()
 root.mainloop()
